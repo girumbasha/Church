@@ -1,0 +1,74 @@
+:root {
+    --font-base: 'Cormorant Upright', serif;
+    --font-alt: 'Open Sans', sans-serif;
+    
+    --color-golden: #DCCA87;
+    --color-black: #0C0C0C;
+    --color-gray: #545454;
+    --color-crimson: #F5EFDB;
+    --color-grey: #AAAAAA;
+    --color-white: #FFFFFF;
+    --base-color: #3377FF;
+  }
+  
+.gospel-section {
+  background-image: url("./church.jpg");
+    background-color:rgb(251, 251, 251);
+    padding: 80px 0;
+   ;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: var(--color-black);
+  }
+  
+  .gospel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  
+  
+  .gospel-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .gospel-text p {
+    margin-bottom: 20px;
+  }
+  
+  /* Media Query for mobile devices */
+  @media (max-width: 844px) {
+    .gospel-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    
+  }
+  
+  
+  
+  .gospel-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Add any additional styling as per your design requirements */
+  

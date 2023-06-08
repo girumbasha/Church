@@ -1,0 +1,29 @@
+.App {
+  /* text-align: center; */
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.scroll-to-top-button.visible {
+  opacity: 1;
+}
+
+.scroll-to-top-button i {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Additional styles as needed */

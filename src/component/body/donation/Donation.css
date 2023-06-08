@@ -1,0 +1,39 @@
+/* PayPalDonateButton.css */
+
+.paypal-button {
+     background-color: #0070ba; 
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .paypal-button:hover {
+    background-color: #005c9a;
+  }
+  .donations-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .donations-section h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .donations-section p {
+    margin-bottom: 20px;
+  }
+  
+  .donate-button:hover {
+    background-color: #45a049;
+  }
+  h1.donation__title {
+    color: #45a049;
+  }
+  h1.donation__title :hover {
+   border-bottom:1px green solid;
+  }

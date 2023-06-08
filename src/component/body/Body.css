@@ -1,0 +1,258 @@
+@import 'sass:color';
+:root {
+    --font-base: 'Cormorant Upright', serif;
+    --font-alt: 'Open Sans', sans-serif;
+    
+    --color-golden: #DCCA87;
+    --color-black: #0C0C0C;
+    --color-gray: #545454;
+    --color-crimson: #F5EFDB;
+    --color-grey: #AAAAAA;
+    --color-white: #FFFFFF;
+    --base-color: #3377FF;
+  }
+  /* /Body header */
+  .location-title{
+  color: var(--color-grey);
+ 
+  }
+
+    /* Hero */
+ .hero {
+  background-image: url("./church.jpg");
+  
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+    }
+    
+    .hero-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      transform: translateX(-100%);
+      animation: slide-in 4s ease-in-out forwards;
+    }
+    
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      transform: translateX(-100%);
+      animation: slide-in 3s ease-in-out forwards;
+    }
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .hero .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #3377FF;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      transform: translateX(-100%);
+      animation: slide-in 3s ease-in-out forwards;
+    }
+    
+    .hero .btn:hover {
+      background-color: #2356B3;
+    }
+    
+   /* Hero End   */
+  
+  /* Blog  */
+ .app__first_blog-container  {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-column-gap: 40px; /* Add this line to set the horizontal gap */
+    
+   }
+   .app__first_blog-container > div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    
+    margin-bottom: 20px; /* Add this line to create a gap below each container */
+   }
+   .app__paragraph{
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+    background: #e9dfdf;
+   }
+   
+  .app__paragraph-title h2{
+    margin-top: 0;
+   }
+  .container-body {
+
+    /* background-color: rgb(230, 246, 253); */
+    background-color: rgb(246, 251, 254);
+    margin-top:-20px
+  }
+
+
+  .app__first_paragraph {
+    font-family: var(--font-base);
+    font-size: 17px;
+
+    font-weight: 100;
+    color: #000080;
+     padding-top: 20px;
+     width: 80%; 
+    letter-spacing: 0cap;
+    padding-left: 8px;
+    transform: translateX(-100%);
+  animation: slide-in 3s ease-in-out forwards;
+  }
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .app__paragraph-first p{
+    margin-bottom: 0;
+    
+  }
+  .app__paragraph-first{
+    transition: transform 0.6s ease;
+  
+  }
+  .app__paragraph-first:hover{
+    transform: translate(0, -5px); /* Adjust the values to change the movement */
+  }
+  
+  .app__paragraph-title {
+     color:  #3377FF; 
+    font-family: var(--font-base);
+    text-align: center;
+
+  }
+  .app__paragraph-first {
+     /* color: #000080;  */
+     color: #1c1c22;
+    font-family: var(--font-alt);
+    display: inline-block;
+    font-weight: 100;
+    white-space: pre-line;
+  }
+  /* End Blog */
+
+
+
+  /* Ministry */
+
+  .ministry-title{
+    color: #116f26;
+    text-align: center;
+  }
+
+  /* Ministry End */
+
+
+    /* About guide */
+
+
+    #about-main-container {
+      text-align: center;
+      margin-top: 50px;
+     
+    }
+    
+    .about__title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #8a5f01;
+      margin-bottom: 20px;
+    }
+    
+    .about__content {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #896f0f;
+    }
+    
+    /* About End */
+  /* schedule */
+  
+  
+  /* Media query for small screens or mobile devices */
+  @media (max-width: 844px) {
+    .schedule table {
+      width: 100%; /* Reset width to 100% on small screens */
+    }
+  
+    .schedule th,
+    .schedule td {
+      font-size: 12px; /* Reduce font size for smaller devices */
+    }
+  }
+  
+  
+/* end schedule   */
+
+
+
+
+  .section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    color: #666666;
+  }
+  
+  .subsection {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color:rgb(251, 251, 251);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sub-heading {
+   color: var(--base-color);
+   font-family: var(--font-base);
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 844px) {
+    .app__first_blog-container {
+      display: block;
+    }
+   .app__paragraph{
+    flex-basis: auto;
+   }
+  }

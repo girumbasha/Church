@@ -1,0 +1,19 @@
+.news-title {
+    color: red;
+    text-align: center;
+    font-weight: 400;
+
+}
+.news-article-title {
+    color: red;
+    text-align: center;
+    font-weight: 400;
+}
+.news-description {
+    width: 70%;
+    color: rgb(16, 16, 93);
+    padding-left: 30px;
+}
+.news-description-date {
+    padding-left: 30px;
+}

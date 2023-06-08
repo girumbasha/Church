@@ -1,0 +1,60 @@
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+  --base-color: #3377FF;
+}
+
+.leaders-container {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  #leaders-main-container{
+    background-color:rgb(251, 251, 251);
+    /* margin-top:-10px */
+  }
+  
+  .leader-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .leader-photo {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .leader-name {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .leaders-title{
+    color: rgb(11, 34, 84);
+    text-align: center;
+  }
+  .leaders-title h2:hover{
+  color: #AAAAAA;
+  }
+  
+  @media (max-width: 768px) {
+    .leaders-container {
+      display: block;
+    }
+  
+    .leader-item {
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  
